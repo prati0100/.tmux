@@ -434,6 +434,8 @@ tmux_conf_uninstall_plugins_on_reload=true
 #set -g @plugin 'tmux-plugins/tmux-continuum'
 #set -g @continuum-restore 'on'
 
+bind-key H swap-window -t -1
+bind-key L swap-window -t +1
 
 # -- custom variables ----------------------------------------------------------
 
