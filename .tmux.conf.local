@@ -438,6 +438,7 @@ bind-key H swap-window -t -1
 bind-key L swap-window -t +1
 
 set -g history-limit 50000
+set -g allow-passthrough on
 
 # -- custom variables ----------------------------------------------------------
 
