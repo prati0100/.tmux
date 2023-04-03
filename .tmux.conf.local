@@ -439,6 +439,7 @@ bind-key L swap-window -t +1
 
 set -g history-limit 50000
 set -g allow-passthrough on
+set -g update-environment "SSH_TTY"
 
 # -- custom variables ----------------------------------------------------------
 
