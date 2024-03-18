@@ -441,6 +441,10 @@ set -g history-limit 50000
 set -g allow-passthrough on
 set -g update-environment "SSH_TTY"
 
+# The tmux conf maps C-l to clear shell and the tmux history. I do not want to
+# clear the history. So unbind this and let the shell handle C-l.
+unbind-key -n C-l
+
 # -- custom variables ----------------------------------------------------------
 
 # to define a custom #{foo} variable, define a POSIX shell function between the
