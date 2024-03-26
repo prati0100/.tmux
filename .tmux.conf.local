@@ -484,7 +484,7 @@ unbind-key -n C-l
 # kernel_rc() {
 #   dir="/home/ptyadav/src/linux"
 #   git -C "$dir" fetch torvalds > /dev/null 2>&1
-#   git -C "$dir" describe --abbrev=0 torvalds/master
+#   git -C "$dir" describe --abbrev=0 --match "v*" torvalds/master
 #   sleep 8h # No need to refresh this constantly since the value does not change often.
 # }
 #
