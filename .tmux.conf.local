@@ -440,6 +440,9 @@ bind-key L swap-window -t +1
 set -g history-limit 50000
 set -g allow-passthrough on
 set -g update-environment "SSH_TTY"
+set -s extended-keys on
+set -as terminal-features 'tmux*:extkeys'
+set -as terminal-features 'xterm*:extkeys'
 
 # The tmux conf maps C-l to clear shell and the tmux history. I do not want to
 # clear the history. So unbind this and let the shell handle C-l.
